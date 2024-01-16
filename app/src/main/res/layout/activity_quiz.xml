@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/compteurJoueur1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="100sp"
+        app:layout_constrainStart_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nomJoueur1"
+        app:layout_constraintBottom_toTopOf="@id/nomJoueur2"/>
+
+
+    <TextView
+        android:id="@+id/compteurJoueur2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@id/nomJoueur2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nomJoueur1"
+        />
+
+    <TextView
+        android:id="@+id/nomJoueur1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Nom du joueur"
+        android:textSize="24sp"
+        app:layout_constraintRight_torightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/nomJoueur2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:rotation="180"
+        android:text="Nom Joueur 2"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+    <Button
+        android:id="@+id/BoutonJoueur2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nomJoueur1"
+        app:layout_constraintStart_toEndOf="@id/compteurJoueur1"
+        app:layout_constraintEnd_toStartOf="@id/compteurJoueur2"
+        />
+
+
+    <Button
+        android:id="@+id/BoutonJoueur1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/nomJoueur2"
+        app:layout_constraintStart_toEndOf="@id/compteurJoueur1"
+        app:layout_constraintEnd_toStartOf="@id/compteurJoueur2"
+        />
+
+    <TextView
+        android:id="@+id/QuestionJoueur2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Question joueur 2"
+        android:textSize="24sp"
+        android:rotation="180"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/BoutonJoueur2"
+        app:layout_constraintStart_toEndOf="@id/compteurJoueur1"
+        app:layout_constraintEnd_toStartOf="@id/compteurJoueur2"
+        />
+
+    <TextView
+        android:id="@+id/QuestionJoueur1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Question joueur 1"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/BoutonJoueur1"
+        app:layout_constraintStart_toEndOf="@id/compteurJoueur1"
+        app:layout_constraintEnd_toStartOf="@id/compteurJoueur2"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/QuestionJoueur2"
+        app:layout_constraintStart_toEndOf="@id/compteurJoueur1"
+        app:layout_constraintEnd_toStartOf="@+id/compteurJoueur2"
+        app:layout_constraintBottom_toTopOf="@id/QuestionJoueur1"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/MaterialBT_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:layout_centerInParent="true"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/MaterialBT_rejouer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rejouer"
+            android:layout_toEndOf="@id/MaterialBT_menu"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+
+            />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
