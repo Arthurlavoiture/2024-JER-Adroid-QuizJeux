@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">QuizJeux</string>
+    <string name="main_menu">Menu</string>
+    <string name="main_Rejouer">rejouer</string>
+    <string name="main_question_joueur1">Question joueur 1</string>
+    <string name="main_question_joueur2">Question joueur 2</string>
+    <string name="main_nom_joueur1">Nom joueur 1</string>
+    <string name="main_nom_joueur2">Nom joueur 2</string>
 </resources>
