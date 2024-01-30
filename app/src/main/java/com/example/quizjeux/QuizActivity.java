@@ -14,9 +14,12 @@ import java.math.BigDecimal;
 import android.os.Bundle;
 
 public class QuizActivity extends AppCompatActivity {
+
+
+    private TextView NomJoueur1;
+    private TextView NomJoueur2;
     private TextView TV_QuestionJoueur1;
     private TextView TV_QuestionJoueur2;
-
     private TextView TV_CompteurJoueur1;
     private TextView TV_CompteurJoueur2;
     private MaterialButton BT_Rejouer;
@@ -35,16 +38,17 @@ public class QuizActivity extends AppCompatActivity {
         BT_Menu = findViewById(R.id.MaterialBT_menu);
         BT_Joueur1 = findViewById(R.id.BoutonJoueur1);
         BT_Joueur2 = findViewById(R.id.BoutonJoueur2);
-
-        TV_QuestionJoueur1.setText("sdfghxcvb");
-
+        NomJoueur1 = findViewById(R.id.nomJoueur1);
+        NomJoueur2 = findViewById(R.id.nomJoueur2);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        NomJoueur1.setText(getIntent().getStringExtra("NomJoueur1"));
+        NomJoueur2.setText(getIntent().getStringExtra("NomJoueur2"));
 
-
-
-
-
+        /*
 BT_Rejouer.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
@@ -72,6 +76,6 @@ BT_Rejouer.setOnClickListener(new View.OnClickListener() {
 
     }
     });
-
-
+*/
+    }
 }

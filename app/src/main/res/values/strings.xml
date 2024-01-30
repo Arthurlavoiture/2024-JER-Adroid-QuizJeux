@@ -6,4 +6,6 @@
     <string name="main_question_joueur2">Question joueur 2</string>
     <string name="main_nom_joueur1">Nom joueur 1</string>
     <string name="main_nom_joueur2">Nom joueur 2</string>
+    <string name="main_BT_nouveaux_joueurs">NEW PLAYER</string>
+    <string name="main_BT_commencer">START</string>
 </resources>

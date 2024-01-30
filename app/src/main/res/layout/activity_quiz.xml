@@ -7,13 +7,33 @@
     tools:context=".QuizActivity">
 
     <TextView
+        android:id="@+id/nomJoueur2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:rotation="180"
+        android:text="@string/main_nom_joueur2"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/nomJoueur1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/main_nom_joueur1"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
         android:id="@+id/compteurJoueur1"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:gravity="center"
         android:text="0"
         android:textSize="100sp"
-        app:layout_constrainStart_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nomJoueur1"
         app:layout_constraintBottom_toTopOf="@id/nomJoueur2"/>
 
@@ -30,29 +50,6 @@
         app:layout_constraintTop_toBottomOf="@id/nomJoueur1"
         />
 
-    <TextView
-        android:id="@+id/nomJoueur1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:text="@string/main_nom_joueur1"
-        android:textSize="24sp"
-        app:layout_constraintRight_torightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/nomJoueur2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:rotation="180"
-        android:text="@string/main_nom_joueur2"
-        android:textSize="24sp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
-
-
-
     <Button
         android:id="@+id/BoutonJoueur2"
         android:layout_width="0dp"
@@ -60,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@id/nomJoueur1"
         app:layout_constraintStart_toEndOf="@id/compteurJoueur1"
         app:layout_constraintEnd_toStartOf="@id/compteurJoueur2"
-        android:bakground="@color/orange"
+        android:background="@color/orange"
         />
 
 
@@ -71,7 +68,7 @@
         app:layout_constraintBottom_toTopOf="@id/nomJoueur2"
         app:layout_constraintStart_toEndOf="@id/compteurJoueur1"
         app:layout_constraintEnd_toStartOf="@id/compteurJoueur2"
-        android:bakground="@color/orange"
+        android:background="@color/orange"
         />
 
     <TextView

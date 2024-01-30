@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
 
 
     <androidx.appcompat.widget.Toolbar
@@ -15,23 +16,24 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <Button
         android:id="@+id/BT_Nouveau_Joueur"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New Player"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="194dp" />
+        android:layout_margin="20dp"
+        android:padding="20dp"
+         />
 
     <EditText
         android:id="@+id/ET_Nom_Joueur1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="284dp"
-
+        android:visibility="invisible"
+        android:layout_margin="20dp"
+        android:padding="20dp"
         />
 
     <EditText
@@ -39,17 +41,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="354dp" />
+        tools:layout_editor_absoluteY="354dp"
+        android:visibility="invisible"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        />
 
 
     <Button
         android:id="@+id/BT_Start_New_Game"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Start_New_Game"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="462dp" />
+        android:visibility="invisible"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+         />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
